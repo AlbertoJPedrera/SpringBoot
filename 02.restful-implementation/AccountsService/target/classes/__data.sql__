@@ -1,2 +1,0 @@
-INSERT INTO accounts (type, openingDate, balance, ownerId) VALUES
-('Cuenta Ahorro', '2023/10/02', 150, 1);

@@ -113,7 +113,7 @@ public class AccountController {
         return new ResponseEntity(account, HttpStatus.CREATED);
     }
     @DeleteMapping(value = "/owner/{idO}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity deleteAccountByOwner(@PathVariable Long accountId, @PathVariable Long idO) {
+    public ResponseEntity deleteAccountByOwner(@PathVariable Long idO) {
         accountService.deleteAccountsUsingOwnerId(idO);
         return ResponseEntity.noContent().build();
     }
